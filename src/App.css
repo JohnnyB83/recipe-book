@@ -1,0 +1,70 @@
+:root {
+  --main-color: #5ea3d0;
+  --secondary-color: white;
+  --main-text-color: #3e5869;
+  --secondary-text-color: #b0c7d6;
+  --send-message-form: #F5F5F5;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  font-weight: 200;
+  color: 	#3e5869; 
+}
+
+.App {
+  display: grid;
+  /* height: 100%; */
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 60px 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+      ". h h h ."
+      ". n . r ."
+      ". n . r ."
+      ". n . r ."
+      ". n . r .";
+}
+
+.recipe-list  {
+  grid-area: n;
+}
+
+.recipe-detail {
+  grid-area: r;
+}
+
+.header {
+  grid-area: h;
+}
+
+.active {
+  color: gray;
+}
+
+.normal {
+  color: 	#3e5869; 
+}
+
+.card-images {
+  height: 100px;
+  width: 100px;
+}
+
+/* recipe detail */
+
+.recipe-title {
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.recipe-steps-title {
+  color: var(--main-text-color);
+}
+
+.recipe-steps {
+  color: var(--main-color);
+  margin: auto;
+}
